@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 //No. 1) calcular número de caracteres
 
 const contarCarecteres = (cadena = "") => {
@@ -113,7 +112,7 @@ function convertToBinary1(number) {
 
 console.log(convertToBinary1(1000));
 
-//Programa que devuelva el número de vocales de una cadena de texto. Ejemplo: "Hola Mundo" = 4 vocales.
+//#8 Programa que devuelva el número de vocales de una cadena de texto. Ejemplo: "Hola Mundo" = 4 vocales.
 const contarVocales = (palabra) => {
   const vocales = "aáeéiíoóuú";
   let cantidadVocales = 0;
@@ -188,7 +187,6 @@ const palabraMayus = (miOracion) => {
 console.log(palabraMayus("sergio yat leal gt"));
 
 //#14  4) Programa que devuelva la cadena de texto invertida. Ejemplo: "Hola Mundo" = "odnuM aloH".
-//#15) Programa que pase un arreglo de números y devuelva la suma de todos los números. Ejemplo: suma(10, 20, 30, 40, 50) = "La suma de todos los números es 150".
 
 const invertirCadena=(cad)=> {
   // Paso 1. Crear una cadena vacía que almacenará la nueva cadena creada
@@ -205,6 +203,9 @@ const invertirCadena=(cad)=> {
 }
 
 console.info(invertirCadena("hola gt"));
+
+//#15) Programa que pase un arreglo de números y devuelva la suma de todos los números. Ejemplo: suma(10, 20, 30, 40, 50) = "La suma de todos los números es 150".
+
 
 //#16) Programa que pase un arreglo de edades y devuelva la mayor y la menor. Ejemplo: edades(10, 20, 30, 40, 50) = "La edad mayor es 50 y la edad menor es 10".
 
@@ -259,7 +260,7 @@ const Primo=(numero)=> {
         if(numero % i === 0) return false;
     return numero > 1;
 }  
-for (let x=0; x<=100; x++) {
+for (let x=0; x<=1000; x++) {
     if (Primo(x))
         console.info(x);
         
@@ -269,19 +270,37 @@ for (let x=0; x<=100; x++) {
 
 //#20) Programa que realice el juego de piedra, papel o tijera. Ejemplo: "Piedra" > "Tijera", "Tijera" > "Papel", "Papel" > "Piedra".
 
+var juego = function (respuesta)
+{
+    if (respuesta.substring(0,2) === "ti")
+    {
+        console.log("¡Perdiste! La piedra le ganó a la tijera.");
+    }
+    else if (respuesta.substring(0,2) === "pa")
+    {
+        console.log("¡Perdiste! La tijera le ganó al papel.");
+    }
+    else
+    {
+        console.log("¡Ganaste! La piedra le gana a todo ;)");
+    }
+};
 
+if (confirm("¿Estás listo para jugar?"))
+{
+    var opcion = prompt("¡Bienvenido a Piedra, papel o tijera! Elige una opción de las tres (Solamente las primeras dos letras): ");
+    juego(opcion);
+}
+else
+{
+    console.log("Regresa pronto");
+}
 
 //#21) Programa con temporizador que muestre un mensaje cada cierto tiempo. Ejemplo: "Hola Mundo" cada 3 segundos.
 
 setTimeout(function(){
-    console.log("Hola Mundo");
-}, 3000);
+  console.log("Hola Mundo");
+}, 2000);
 
-console.log("setTimeout() Ejemplo...");
+console.log(" Ejemplo 3 2 1 ");
 
-
-=======
-const nombre = "Juan Carlos Cervantes";
-
-console.log(nombre);
->>>>>>> 5771aacded1334442674e42839bd3b1dd42a0ab7
